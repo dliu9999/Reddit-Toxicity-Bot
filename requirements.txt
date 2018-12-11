@@ -1,0 +1,4 @@
+torch==0.4.1
+spacy==2.0.18
+torchtext==0.3.1
+praw==6.0.0
