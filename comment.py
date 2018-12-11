@@ -1,6 +1,6 @@
 import praw
-#import config
 import os
+import time
 from RNN_Model import predict_sentiment as ps
 
 def bot_login():
@@ -48,6 +48,7 @@ def run_bot(r):
 
 comments_replied_to = []
 
-r = bot_login()
-run_bot(r)
-print("Success!")
+while True:
+    r = bot_login()
+    run_bot(r)
+    time.sleep(600)
